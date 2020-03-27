@@ -2,7 +2,7 @@
 
 ## Project Links
 
-- [add your github repo link]()
+- [add your github repo link](https://github.com/brockstar512/project_2)
 - [add your deployment link]()
 
 ## Project Description
@@ -33,15 +33,77 @@ Sandbox Key:9944f496ae8b8841eb71229ebfe3ecf1
 
 
 
+restroom
+https://www.refugerestrooms.org/api/docs/
+
 
 
 ## API
 
 Use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project. 
 
+nasa key
+lXHOMRDvuPMGyqU4F3LZDz8WiYBFLg7L2v4lhxGd
+Account Email: MARSHALLBROCK@GMAIL.COM
+Account ID: 40e23b3f-4d3c-4adc-bc7f-d22d8ecab6c8
+
 
 ```
-{data: {} }
+{data: {meta:{  
+    id:"baseball",
+    uuid:"5baf923f-d3d2-4f89-b222-379abca062ea",
+    update:"original",
+    src:"sch_dict",
+    section:"alpha",
+    stems:[  
+        "baseball",
+        "baseballs"
+    ],
+    offensive:false
+},
+hwi:{  
+    hw:"base*ball",
+    prs:[  
+        {  
+            mw:"ˈbās-ˌbȯl",
+            sound:{  
+                audio:"baseba01"
+            }
+        }
+    ]
+},
+fl:"noun",
+def:[  
+    {  
+        sseq:[  
+            [  
+                [  
+                    "sense",
+                    {  
+                        dt:[  
+                            [  
+                                "text",
+                                "{bc}a game played with a bat and ball between two teams of nine players each on a field with four bases that mark the course a runner must take to score"
+                            ]
+                        ],
+                        sdsense:{  
+                            sd:"also",
+                            dt:[  
+                                [  
+                                    "text",
+                                    "{bc}the ball used in this game"
+                                ]
+                            ]
+                        }
+                    }
+                ]
+            ]
+        ]
+    }
+],
+shortdef:[  
+    "a game played with a bat and ball between two teams of nine players each on a field with four bases that mark the course a runner must take to score; also : the ball used in this game"
+]} }
 ```
 
 
@@ -65,7 +127,8 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### PostMVP EXAMPLE
 
 - Add cool styling
-- add alert for word of the days. add cool ictures for nasa.
+- add alert for word of the days.
+- add a search for a thesarus
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
@@ -77,15 +140,23 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | App | This will make the initial data pull and include React Router| 
 | Header | This will render the header include the nav | 
 | Footer | This will render the header include the nav | 
+| Main | This will render the main and will be parent to other components| 
+| word of the day | this will pick a random word| 
+| dictionary | This component will allow you to search for a word.| 
+| libray | this component would let you scroll through all the words| 
+
 
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Adding Form | H | 3hrs| tbd | tbd |
+| Working with API | H | 3hrs| tbd| tbd |
+| gettin pages to render | H | 3hrs| tbd| tbd |
+| adding styling| H | 3hrs| tbd | tbd |
+|adding search component | H | 3hrs| tbd | tbd |
+| Total | H | 15hrs| tbd | tbd |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
