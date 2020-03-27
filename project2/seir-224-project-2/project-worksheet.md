@@ -9,7 +9,8 @@
 
 Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 
-This project I would like to make list of the public restrooms in Austin. I havent found any public restroom api's. If I can't end up finding an api for the public restrooms I would just like to make a cocktail recipe app, or a dictionary. Maybe if I do a dictionary I could have a word of the day as an MVP or route. I think if I do a cocktail app I could have an 21 or up landing page. OR if all of this fails I could do something with nasa. I think that I could something that could atleast look cool if I add pictures from nasas public domain and rendered then in cinema 4d. I could have a component dedication to pictures and a component dedicated to facts.
+I will be making a dictionary app. It will give the user a library of words and if you click on the words it will give the user a definition on a new component page.
+
 
 
 dictionary https://www.dictionaryapi.com/api/v3/references/sd4/json/baseball?key=your-api-key
@@ -22,31 +23,12 @@ Key (Thesaurus):
 af41af7a-ec0b-480f-a95c-bd85f44cf8b2
 
 
-nasa key
-lXHOMRDvuPMGyqU4F3LZDz8WiYBFLg7L2v4lhxGd
-Account Email: MARSHALLBROCK@GMAIL.COM
-Account ID: 40e23b3f-4d3c-4adc-bc7f-d22d8ecab6c8
-
-for a breery
-Sandbox URL:https://sandbox-api.brewerydb.com/v2/
-Sandbox Key:9944f496ae8b8841eb71229ebfe3ecf1
-
-
-
-restroom
-https://www.refugerestrooms.org/api/docs/
 
 
 
 ## API
 
 Use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project. 
-
-nasa key
-lXHOMRDvuPMGyqU4F3LZDz8WiYBFLg7L2v4lhxGd
-Account Email: MARSHALLBROCK@GMAIL.COM
-Account ID: 40e23b3f-4d3c-4adc-bc7f-d22d8ecab6c8
-
 
 ```
 {data: {meta:{  
@@ -123,12 +105,16 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Find and use external api 
 - Render data on page 
 - Allow user to interact with the page
+- have a page of a list of words.
+- have a definition page
 
 #### PostMVP EXAMPLE
 
 - Add cool styling
-- add alert for word of the days.
-- add a search for a thesarus
+- add a list of collected words and their definition
+- add a word of the day
+- add a search function
+<!-- - add a search for a thesarus -->
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
@@ -141,9 +127,9 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Header | This will render the header include the nav | 
 | Footer | This will render the header include the nav | 
 | Main | This will render the main and will be parent to other components| 
-| word of the day | this will pick a random word| 
-| dictionary | This component will allow you to search for a word.| 
-| libray | this component would let you scroll through all the words| 
+| list | This be a list of the words.| 
+| definition | This will render the defintion of the word you have clicked| 
+
 
 
 
