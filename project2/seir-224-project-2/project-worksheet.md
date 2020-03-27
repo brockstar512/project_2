@@ -9,7 +9,31 @@
 
 Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 
-This project I would like to make list of the public restrooms in Austin. I havent found any public restroom api's. If I can't end up finding an api for the public restrooms I would just like to make a cocktail recipe app, or a dictionary. Maybe if I do a dictionary I could have a word of the day as an MVP or route.
+This project I would like to make list of the public restrooms in Austin. I havent found any public restroom api's. If I can't end up finding an api for the public restrooms I would just like to make a cocktail recipe app, or a dictionary. Maybe if I do a dictionary I could have a word of the day as an MVP or route. I think if I do a cocktail app I could have an 21 or up landing page. OR if all of this fails I could do something with nasa. I think that I could something that could atleast look cool if I add pictures from nasas public domain and rendered then in cinema 4d. I could have a component dedication to pictures and a component dedicated to facts.
+
+
+dictionary https://www.dictionaryapi.com/api/v3/references/sd4/json/baseball?key=your-api-key
+Key (Dictionary):
+
+023e133d-53db-4dad-94d5-5139255f9b6e
+
+Key (Thesaurus):
+
+af41af7a-ec0b-480f-a95c-bd85f44cf8b2
+
+
+nasa key
+lXHOMRDvuPMGyqU4F3LZDz8WiYBFLg7L2v4lhxGd
+Account Email: MARSHALLBROCK@GMAIL.COM
+Account ID: 40e23b3f-4d3c-4adc-bc7f-d22d8ecab6c8
+
+for a breery
+Sandbox URL:https://sandbox-api.brewerydb.com/v2/
+Sandbox Key:9944f496ae8b8841eb71229ebfe3ecf1
+
+
+
+
 
 ## API
 
@@ -40,7 +64,8 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### PostMVP EXAMPLE
 
-- Add localStorage or firebase for storage
+- Add cool styling
+- add alert for word of the days. add cool ictures for nasa.
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
