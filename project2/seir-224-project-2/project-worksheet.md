@@ -4,9 +4,7 @@
 
 - [add your github repo link](https://github.com/brockstar512/project_2)
 - [add your deployment link]()
-- [component map](https://res.cloudinary.com/dq6nhmmpi/image/upload/v1585326425/project_2_qjb2wi.jpg)
-- [wireFrameDesktopandTablet] (https://res.cloudinary.com/dq6nhmmpi/image/upload/v1585327502/3c9694d3e1dd4f59892f7219b4010391_q28gkw.png)
-- [wireFramemobile] (https://res.cloudinary.com/dq6nhmmpi/image/upload/v1585327852/2334234_xxwfbq.png)
+
 ## Project Description
 
 Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
@@ -95,8 +93,9 @@ shortdef:[
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [add link to your wireframes]()
-- [add link to your react architecture]()
+- [component map](https://res.cloudinary.com/dq6nhmmpi/image/upload/v1585326425/project_2_qjb2wi.jpg)
+- [wireFrameDesktopandTablet] (https://res.cloudinary.com/dq6nhmmpi/image/upload/v1585327502/3c9694d3e1dd4f59892f7219b4010391_q28gkw.png)
+- [wireFramemobile] (https://res.cloudinary.com/dq6nhmmpi/image/upload/v1585327852/2334234_xxwfbq.png)
 
 
 ### MVP/PostMVP - 5min
