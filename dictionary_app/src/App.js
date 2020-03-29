@@ -61,7 +61,15 @@ function App() {
  
 
 
-  // //WHY DOES THIS NOT WORK
+
+// const oxford = `	https://od-api.oxforddictionaries.com/api/v2`
+// const id = `d7c3808d`
+// const key = 	`21723442e8017fa22e2a58f1ac2f4c53`
+// cont lang = `en-us`
+
+
+
+  // //WHY DOES THIS NOT WORK - because the key does not need curly brackets
   //   const key =`{023e133d-53db-4dad-94d5-5139255f9b6e}`
   //   const dictionaryUrl = `https://dictionaryapi.com/api/v3/references/collegiate/json/test?key=${key}`  
   // const makeApiCall = async () => {
@@ -72,7 +80,10 @@ function App() {
   //   makeApiCall()
   //am i calling ^ wrong?
     //BUT THIS DOES
-    const dictionaryUrl = `https://dictionaryapi.com/api/v3/references/collegiate/json/test?key=023e133d-53db-4dad-94d5-5139255f9b6e`  
+    // const oxford = `https://od-api.oxforddictionaries.com/api/v2/d7c3808d/21723442e8017fa22e2a58f1ac2f4c53`
+    const key =`023e133d-53db-4dad-94d5-5139255f9b6e`
+    // const dictionaryUrl = `https://www.dictionaryapi.com/api/v3/references/sd2/json/school?key=${key}`  
+    const dictionaryUrl = `https://dictionaryapi.com/api/v3/references/collegiate/json/school?key=023e133d-53db-4dad-94d5-5139255f9b6e`  
     async function  makeApiCall(){
         const res = await fetch(dictionaryUrl)
         const json = await res.json()
