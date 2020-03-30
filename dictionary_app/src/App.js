@@ -3,7 +3,7 @@ import Header from "./Header"
 import Footer from "./Footer"
 import Main from "./Main"
 export const Submit = React.createContext()
-export const DataRequest = React.createContext()
+// export const DataRequest = React.createContext()
 
 
 
@@ -77,12 +77,10 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <DataRequest.Provider value ={searchData}>         
+      <Header /> 
       <Submit.Provider value={handleSubmit}>
-      <Main />
+      <Main wordData = {searchData}/>
       </Submit.Provider>
-      </DataRequest.Provider> 
       <Footer />
     
     </div>
