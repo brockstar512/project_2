@@ -1,25 +1,29 @@
 import React from 'react';
 import './App.css';
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect, link } from "react-router-dom";
 import DictionaryList from "./DictionaryList"
 import Definition from "./Definition"
 
 function Main(props){
     console.log("here is what props is passing in Main", props.wordData)
     return (<div><h1>Here is Main and its components</h1>
-    <Switch>
-    {/* <DictionaryList />
-    <Definition wordData={props.wordData}/> */}
+    {/* <Switch>
+    
      <Route exact path ="/" component ={DictionaryList} />
      <Route 
-        path ="/definition/:name" 
+        path ="/definition" 
         component ={Definition} 
+        render={props => <Definition wordData={props.wordData}{...props}/>}
      />
-     <Route 
+      <Redirect to="/" />
+    </Switch> */}
+     {/* <Route 
         path ="/definition/" 
         component ={Definition} 
-     />
-    </Switch>
+     /> */}
+     <DictionaryList />
+    <Definition wordData={props.wordData}/>
+    
     </div>
     )
 }

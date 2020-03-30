@@ -1,5 +1,6 @@
 import React, {useContext, useState} from 'react';
 import {Submit} from "./App"
+import { Link } from "react-router-dom";
 // import ReactDOM from 'react-dom';
 
 function DictionaryList (){
@@ -13,11 +14,14 @@ const handleChange = e => {
   };
 
 
-
+// console.log("HERE IS PROPS IN LIST. HISTORY IS SUPPOSE TO SHOW UP",props)
 const handleSubmit = e => {
     e.preventDefault();
     submit(wordQ)
     setSearchReset("")
+    // props.history.push('/definition')
+    //dont know if i'll need^
+    
 }
     return <><h1>Here is dictionary List</h1>
     <form onSubmit = {handleSubmit}>
@@ -32,5 +36,6 @@ const handleSubmit = e => {
     <input type ="submit" value ="Define"/>
     </form>
     </>
+    //on submit link to?
 }
 export default DictionaryList
