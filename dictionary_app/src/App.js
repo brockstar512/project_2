@@ -3,6 +3,7 @@ import Header from "./Header"
 import Footer from "./Footer"
 import Main from "./Main"
 export const Submit = React.createContext()
+export const DataRequest = React.createContext()
 
 
 
@@ -29,7 +30,7 @@ function App() {
   // })
  
   const [searchData, setSearchData] = useState({});
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState("face");
 
 
 // const oxford = `	https://od-api.oxforddictionaries.com/api/v2`
@@ -43,14 +44,12 @@ function App() {
 
     const key =`023e133d-53db-4dad-94d5-5139255f9b6e`
     const dictionaryUrl = `https://dictionaryapi.com/api/v3/references/collegiate/json/${search}?key=${key}`  
-  
     useEffect(() => {
     const makeApiCall = async () => {
       const res = await fetch(dictionaryUrl)
       const json = await res.json()
       console.log("here is the json during the fetch",json)
       setSearchData(json);
-    
     };
     makeApiCall();
   }, [search]);
@@ -79,9 +78,11 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <DataRequest.Provider value ={searchData}>         
       <Submit.Provider value={handleSubmit}>
       <Main />
       </Submit.Provider>
+      </DataRequest.Provider> 
       <Footer />
     
     </div>

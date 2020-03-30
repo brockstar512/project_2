@@ -4,7 +4,7 @@ import {Submit} from "./App"
 
 function DictionaryList (){
 const submit =useContext(Submit)
-
+console.log("here the ocntext var is on list ",submit)
 const [wordQ, setSearchReset] = useState("");
 
 const handleChange = e => {
@@ -12,13 +12,25 @@ const handleChange = e => {
     setSearchReset(searching);
   };
 
-const [wordQ, setWordQ] = useState("");
+
 
 const handleSubmit = e => {
     e.preventDefault();
     submit(wordQ)
-    setWordQ("")
+    setSearchReset("")
 }
-    return <h1>Here is dictionary List</h1>
+    return <><h1>Here is dictionary List</h1>
+    <form onSubmit = {handleSubmit}>
+    <label> Search for you word here</label>
+    <input
+    id="wordQ"
+    type="text"
+    value={wordQ}
+    onChange={handleChange}
+    placeholder="Search for word"
+    />
+    <input type ="submit" value ="Define"/>
+    </form>
+    </>
 }
 export default DictionaryList
