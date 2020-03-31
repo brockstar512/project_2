@@ -30,8 +30,8 @@ function App() {
   // })
  
   const [searchData, setSearchData] = useState({});
-  const [search, setSearch] = useState("face");
-
+  const [search, setSearch] = useState("test");
+  console.log("This is searchData in APP", searchData)
 
 // const oxford = `	https://od-api.oxforddictionaries.com/api/v2`
 // const id = `d7c3808d`
@@ -50,7 +50,7 @@ function App() {
       const json = await res.json()
       console.log("here is the json during the fetch",json)
       setSearchData(json);
-    };
+    }
     makeApiCall();
   }, [search]);
      
@@ -79,7 +79,9 @@ function App() {
     <div className="App">
       <Header /> 
       <Submit.Provider value={handleSubmit}>
-      <Main wordData = {searchData}/>
+      <Main 
+      wordData = {searchData}
+      />
       </Submit.Provider>
       <Footer />
     

@@ -1,45 +1,56 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import './App.css';
-// import {DataRequest} from "./App"
-import ReactDOM from 'react-dom';
-import { Link } from "react-router-dom";
+
 
 function Definition (props){
-
-    
-    if(!props.wordData[0]){
-        // console.log("props.wordData[0].shortdef =",props.wordData[0].shortdef[0]) 
+console.log("this is props.wordData inside DEFINITION", props.wordData)
+    const wordData = props.wordData[0]
+    if(!wordData){
+        //    console.log("props.wordData[0] =",wordData) 
         return <></>
-    }//THIS CHUNK OF CODE IS REALLY IMPORTANT.
-    //IF THIS IS UNDEFINED LOAD NOTHING ELSE LOAD WHAT I WANT
-    //
-    //
-    //
-    // const wordSearchFor=props
-    const wordDefinition = props.wordData[0].shortdef.map( (word,index) => {
-        // console.log("this is word", word)
-        if(index<=2){
-        return <ul key ={index}>
+    }
+   
+    const wordInfo = props.wordData.map( (word, index) => {
+        if(index<=3){
+            const defArray = word.shortdef.map((def,i) =>{
+                return <ul>
+                    <li>{`Definition ${i+1}: ${def}`}</li>
+                </ul>
+            })
             
-            <li>{`Definition ${index+1}: ${word}`}</li>
-            </ul>
+        return <div key ={index}>
+            <p>{`Part of Speech: ${word.fl}`}</p>
+                {defArray}
+                </div>
         }
         else{
             return <></>
         }
     })
+    // const wordDefinition = wordData.shortdef.map( (word,index) => {
+    //     // console.log("this is word", word)
+    //     if(index<=2){
+    //     return <ul key ={index}>
+    //         <li>{`Definition ${index+1}: ${word}`}</li>
+    //         </ul>
+    //     }
+    //     else{
+    //         return <></>
+    //     }
+    // })
     // console.log("here is what we are defining in definition", props.wordData)
     // console.log("props.wordData[0] =",props.wordData[0] )
     // // console.log("dfgkdfj", wordDefinition)
     // console.log("props.wordData[0].shortdef =",props.wordData[0].shortdef[0])
-    return <>
-    {/* <Link to ={`/definition`}> */}
+    return (<>
+   
     <div>
-        <h1>Definition of {props.wordData[0].hwi.hw}</h1>
-        <div className ="def">{wordDefinition}</div>
+        <h1>Definition of {wordData.hwi.hw}</h1>
+        {/* <div className ="def">{wordDefinition}</div> */}
+        <div className ="sepDef">{wordInfo}</div>
     </div>
 
-   {/* </Link> */}
+   
     </>
-}
+    )}
 export default Definition
