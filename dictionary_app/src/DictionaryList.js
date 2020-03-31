@@ -26,9 +26,9 @@ function DictionaryList() {
         setRedirect(true)
     }
     if (!redirect) {
-        return <><h1>Here is dictionary List</h1>
+        return <div className="body"><h1>Search for Definition</h1>
             <form onSubmit={handleSubmit}>
-                <label> Search for you word here</label>
+                {/* <label> Search for you word here</label> */}
                 <input
                     id="wordQ"
                     type="text"
@@ -39,7 +39,7 @@ function DictionaryList() {
                 <input type="submit" value="Define" />
 
             </form>
-        </>
+        </div>
         //on submit link to?
     }
     else{

@@ -1,0 +1,90 @@
+/*color
+dark purple
+#6B3791
+
+middle purple
+#9251AC
+
+light purple
+#B76AC4
+
+text box
+#E1E8FA
+
+sky blue
+#d2fafb
+
+rose pink
+
+#FE346E
+
+
+
+box color
+#f4eeff
+https://colorhunt.co/palette/174976
+
+
+cool search bar
+https://codepen.io/AlbertFeynman/pen/BPvzWZ
+many options
+https://www.mockplus.com/blog/post/search-bar-design
+*/
+html, body {
+    height: 100%;
+    margin: 0;
+    }
+body {
+    background-color:#9251AC;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .footer{
+    background-color: #B76AC4;
+    height: 50px;
+    margin-bottom:0px;
+    justify-content: space-around;
+    align-items:center;
+    display: flex;
+    box-shadow: 0px -5px 100px;
+    
+
+  }
+
+  .header{
+    background-color: #B76AC4;
+    margin-top:0px;
+    height: 50px;
+    box-shadow: 0px 5px 100px;
+    
+  }
+
+  .body{
+      height:425px;
+  }
+  .body > h1{
+    color:#d2fafb;
+  }
+
+  form{
+      
+  }
+  ul{
+    list-style-type: none;
+  }
+  .definition{
+      background-color:#f4eeff;
+  }
+   /* opacity: 0.3; */
+   .sepDef{
+   }
+   .speech{
+    background-color:white;
+   
+   }
+   /* div > li{
+    list-style-type: none;
+    color:white;
+  } */

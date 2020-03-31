@@ -7,7 +7,7 @@ import Definition from "./Definition"
 function Main(props){
     console.log("here is what props is passing in MAIN", props.wordData)
     console.log("Main has components. Somehow its beeing passed to definition")
-    return (<div><h1>Here is Main and its components</h1>
+    return (<div>
     <Switch>
     
      <Route exact path ="/" component ={DictionaryList} />

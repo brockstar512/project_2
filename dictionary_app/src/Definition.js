@@ -18,7 +18,7 @@ console.log("this is props.wordData inside DEFINITION", props.wordData)
                 </ul>
             })
             
-        return <div key ={index}>
+        return <div key ={index} className ="speech">
             <p>{`Part of Speech: ${word.fl}`}</p>
                 {defArray}
                 </div>
@@ -44,7 +44,7 @@ console.log("this is props.wordData inside DEFINITION", props.wordData)
     // console.log("props.wordData[0].shortdef =",props.wordData[0].shortdef[0])
     return (<>
    
-    <div>
+    <div className="definition">
         <h1>Definition of {wordData.hwi.hw}</h1>
         {/* <div className ="def">{wordDefinition}</div> */}
         <div className ="sepDef">{wordInfo}</div>

@@ -3,6 +3,6 @@ import './App.css';
 
 
 function Footer(){
-return<h1>This is the footer</h1>
+return<p className="footer">Created by Marshall Brock</p>
 }
 export default Footer
