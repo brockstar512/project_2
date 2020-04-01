@@ -19,8 +19,10 @@ console.log("this is props.wordData inside DEFINITION", props.wordData)
             })
             
         return <div key ={index} className ="speech">
+            <div className ="innerWrapper">
             <p>{`Part of Speech: ${word.fl}`}</p>
                 {defArray}
+                </div>
                 </div>
         }
         else{
@@ -45,7 +47,7 @@ console.log("this is props.wordData inside DEFINITION", props.wordData)
     return (<>
    
     <div className="definition">
-        <h1>Definition of {wordData.hwi.hw}</h1>
+        <h1 className ="title">Definition of {wordData.hwi.hw}</h1>
         {/* <div className ="def">{wordDefinition}</div> */}
         <div className ="sepDef">{wordInfo}</div>
     </div>
