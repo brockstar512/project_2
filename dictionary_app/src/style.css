@@ -39,6 +39,8 @@ tan
 yellow dark
 f3c623
 
+green 
+#BED067
 
 box color
 #f4eeff
@@ -72,9 +74,11 @@ body {
     background-color:#9251AC;
     display: flex;
     flex-direction: column;
+    /* height:100%; */
   }
   .App {
     text-align: center;
+    /* height:611px; */
   }
 
   .footer{
@@ -86,7 +90,9 @@ body {
     display: flex;
     box-shadow: 0px -5px 100px black;
     /* color:#00bdaa; */
-    color:#f3c623;
+    color:black;
+    clear:both;
+    align-self:flex-end;
   }
 
   .header{
@@ -97,23 +103,19 @@ body {
     justify-content: space-around;
     align-items:center;
     display: flex;
-    color:#f3c623;
+    color:black;
   }
   .header > a{
     text-decoration: none;
-    color:#f3c623;
+    color:black;
     
   }
 
 
-
-
-
-
-  
-
   .body{
-      height:425px;
+      /* height:425px; */
+      /* having trouble getting the bottom to stay */
+      height:475px;
   }
   .body > h1{
     padding-top:100px;

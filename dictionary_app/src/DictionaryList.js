@@ -1,6 +1,9 @@
 import React, { useContext, useState } from 'react';
 import { Submit } from "./App"
 import { Redirect } from 'react-router-dom'
+import "./button.scss"
+
+
 
 // import ReactDOM from 'react-dom';
 
@@ -26,7 +29,8 @@ function DictionaryList() {
         setRedirect(true)
     }
     if (!redirect) {
-        return <div className="body"><h1>Search for Definition</h1>
+        return <div className="body">
+        <div className="container">
             <form onSubmit={handleSubmit}>
                 {/* <label> Search for you word here</label> */}
                 <input
@@ -36,9 +40,11 @@ function DictionaryList() {
                     onChange={handleChange}
                     placeholder="Search for word"
                 />
-                <input type="submit" value="Define" />
-
+                <div className="search">
+                <input type="submit" value="Define" /></div>
             </form>
+            </div>
+            <h1>Search for a Definition</h1>
         </div>
         //on submit link to?
     }
