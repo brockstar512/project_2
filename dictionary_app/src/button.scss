@@ -1,4 +1,5 @@
 //https://codepen.io/brockstar512/pen/yLNwPNp
+//created by Jove Angelevski
 * {
   // margin: 0;
   // padding: 0;
@@ -88,7 +89,7 @@ html, body {
     text-shadow: 0 0 10px crimson;
     padding: 0 80px 0 20px;
     border-radius: 30px;
-    box-shadow: 0 0 25px 0 crimson,
+    box-shadow: 0 0 25px 0 black,//*
                 0 20px 25px 0 rgba(0, 0, 0, 0.2);
     // box-shadow: inset 0 0 25px 0 rgba(0, 0, 0, 0.5);
     transition: all 1s;
@@ -100,7 +101,7 @@ html, body {
       cursor: pointer;
     }
     &:focus {
-      width: 300px;
+      width: 300px;// width: 200px;
       opacity: 1;
       cursor: text;
     }
@@ -131,3 +132,8 @@ html, body {
     }
   }
 }
+
+//To do
+//-move buttong over when clicked
+//get words to be responsive
+//get footer to stick to bottom
