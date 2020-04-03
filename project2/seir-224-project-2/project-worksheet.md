@@ -2,8 +2,8 @@
 
 ## Project Links
 
-- [add your github repo link](https://github.com/brockstar512/project_2)
-- [add your deployment link]()
+- [add your github repo link](https://github.com/brockstar512/dictionary_app)
+- [add your deployment link](https://dictionaryapp.netlify.com/?_ga=2.44796579.666912393.1585764586-426117086.1585326652)
 
 ## Project Description
 
