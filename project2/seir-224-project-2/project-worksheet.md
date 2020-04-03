@@ -106,16 +106,16 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Find and use external api 
 - Render data on page 
 - Allow user to interact with the page
-- have a page of a list of words.
+- have a page of a list of words. - no. search function replaced this
 - have a definition page
 
 #### PostMVP EXAMPLE
 
-- Add cool styling
-- add a list of collected words and their definition
-- add a word of the day
-- add a search function
-- add a thesarus
+- Add cool styling - yes
+- add a list of collected words and their definition - no
+- add a word of the day - no
+- add a search function -yes
+- add a thesarus -no
 <!-- - add a search for a thesarus -->
 
 ## Components
