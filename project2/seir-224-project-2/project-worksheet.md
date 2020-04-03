@@ -115,6 +115,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - add a list of collected words and their definition
 - add a word of the day
 - add a search function
+- add a thesarus
 <!-- - add a search for a thesarus -->
 
 ## Components
@@ -128,7 +129,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Header | This will render the header include the nav | 
 | Footer | This will render the header include the nav | 
 | Main | This will render the main and will be parent to other components| 
-| list | This be a list of the words.| 
+| search form | This search the dictionary for a specific word| 
 | definition | This will render the defintion of the word you have clicked| 
 
 
@@ -138,22 +139,45 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| tbd | tbd |
-| Working with API | H | 3hrs| tbd| tbd |
-| gettin pages to render | H | 3hrs| tbd| tbd |
-| adding styling| H | 3hrs| tbd | tbd |
-|adding search component | H | 3hrs| tbd | tbd |
-| Total | H | 15hrs| tbd | tbd |
+| Adding Form | H | 3hrs| 3hrs | 6hrs |
+| Working with API | H | 3hrs| 3hrs| 5hrs |
+| gettin pages to render | H | 3hrs| 2hrs| 2hrs |
+| adding styling| H | 3hrs| 2hrs | 2hrs |
+|adding search component | H | 3hrs| 3hrs | 5 hrs |
+| Total | H | 15hrs| 13 hrs | 20hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
+ https://codepen.io/brockstar512/pen/yLNwPNp
+button created by Jove Angelevski
 
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
 
+
+
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+const wordInfo = props.wordData.map( (word, index) => {
+        if(word.shortdef===undefined){
+            notHere =true
+        }
+        else if(index<=3){
+            const defArray = word.shortdef.map((def,i) =>{
+                return <ul key={i}>
+                    <li>{`Definition ${i+1}: ${def}`}</li>
+                </ul>
+            })
+            
+        return <div key ={index} className ="speech">
+            <div className ="innerWrapper">
+            <p>{`Part of Speech: ${word.fl}`}</p>
+                {defArray}
+                </div>
+                </div>
+        }
+        else{
+            return <></>
+        }
+    })
 ```
