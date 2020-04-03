@@ -21,18 +21,18 @@ complete:
 We will evaluate your project according to the following criteria:
 
 - **Code Quality:** Is the code well formatted? Is the code easy to read and
-  understand? Does the code follow best practices?
+  understand? Does the code follow best practices? - 2 
 - **Technical Requirements:** How does the project stack up to the requirements
   for this project? Is the developer making use of the material we've covered in
-  a way that makes sense?
+  a way that makes sense? - 2 
 - **Creativity & Interface:** Is the application easy to navigate? Does it work
   well in every major browser? Is it responsive? Does it incorporate modern UI
-  Themes?
+  Themes? - 3
 - **Functionality:** Does the application work without errors or bugs? Does it
   present a complete app, where every feature is fully implemented in a way that
-  makes sense?
+  makes sense? - 2
 - **Presentation:** Is there adequate documentation? Is the repository well
-  organized and free of clutter?
+  organized and free of clutter? - 1
 
 ## Scoring
 
